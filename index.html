@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Password generator</h1>
+        <input type="text" class='txt' id="passOutput">
+        <div class="length">
+            <output id="passLengthOutput"></output>
+            <input type="range" name="Password length" id="passLengthInput" onmousemove="passLengthRender()">
+        </div>
+        <div class="btnGroup">
+            <input type="button" class='btn' value="COPY TEXT" onclick="copyPass()">
+            <input type="button" class='btn' value="GENERATE" id="genBtn" onclick="passGen()">
+        </div>
+    </div>
+    <script src="app.js"></script>
+</body>
+</html>
